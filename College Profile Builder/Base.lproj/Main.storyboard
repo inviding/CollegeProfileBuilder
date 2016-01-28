@@ -61,7 +61,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="93r-bq-WWB">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="KFW-8d-8af"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="KFW-8d-8af">
+                            <connections>
+                                <action selector="onTappedEditButton:" destination="BYZ-38-t0r" id="Pj8-KX-6Od"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JXG-iP-ZdS">
                             <connections>
                                 <action selector="onTappedPlusButton:" destination="BYZ-38-t0r" id="NdU-hC-3Xd"/>

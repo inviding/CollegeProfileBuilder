@@ -12,12 +12,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
-
+    
     var colleges = ["University of Illinois", "University of Washington", "University of California, Irvine"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        editButton.tag = 0
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,7 +37,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @IBAction func onTappedPlusButton(sender: UIBarButtonItem) {
+    @IBAction func onTappedPlusButton(sender: UIBarButtonItem)
+    {
         
         let alert = UIAlertController(title: "Add College", message: nil, preferredStyle: .Alert)
         
@@ -50,6 +51,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             })
             alert.addAction(addAction)
             self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+    }
+    
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        
+        let college = colleges[sourceIndexPath.row]
+        colleges.removeAtIndex(sourceIndexPath.row)
+        colleges.insert(college, atIndex: destinationIndexPath.row)
+    }
+    
+    @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
+        
+        if sender.tag == 0 {
+            tableView.editing = true
+            editButton.tag = 1
+        }
+        else {
+            tableView.editing = false
+            sender.tag = 0
         }
     }
     
