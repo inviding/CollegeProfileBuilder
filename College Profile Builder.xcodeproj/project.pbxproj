@@ -15,6 +15,7 @@
 		3F696BB91C4FFCC800EDAFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F696BB71C4FFCC800EDAFDD /* LaunchScreen.storyboard */; };
 		3F696BC41C4FFCC900EDAFDD /* College_Profile_BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F696BC31C4FFCC900EDAFDD /* College_Profile_BuilderTests.swift */; };
 		3F696BCF1C4FFCC900EDAFDD /* College_Profile_BuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F696BCE1C4FFCC900EDAFDD /* College_Profile_BuilderUITests.swift */; };
+		3FF24CC41C5FDEDD006EC7D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF24CC31C5FDEDD006EC7D7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F696BCA1C4FFCC900EDAFDD /* College Profile BuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College Profile BuilderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F696BCE1C4FFCC900EDAFDD /* College_Profile_BuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_Profile_BuilderUITests.swift; sourceTree = "<group>"; };
 		3F696BD01C4FFCC900EDAFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF24CC31C5FDEDD006EC7D7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				3F696BAE1C4FFCC800EDAFDD /* AppDelegate.swift */,
 				3F696BB01C4FFCC800EDAFDD /* ViewController.swift */,
+				3FF24CC31C5FDEDD006EC7D7 /* DetailViewController.swift */,
 				3F696BB21C4FFCC800EDAFDD /* Main.storyboard */,
 				3F0D95C71C5A943000417681 /* College.swift */,
 				3F696BB51C4FFCC800EDAFDD /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				3F696BB11C4FFCC800EDAFDD /* ViewController.swift in Sources */,
 				3F696BAF1C4FFCC800EDAFDD /* AppDelegate.swift in Sources */,
 				3F0D95C81C5A943000417681 /* College.swift in Sources */,
+				3FF24CC41C5FDEDD006EC7D7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
